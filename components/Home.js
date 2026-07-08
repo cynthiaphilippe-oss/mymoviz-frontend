@@ -12,7 +12,7 @@ function Home() {
 
   // Fetch movies from backend
   useEffect(() => {
-    fetch('mymoviz-backend-etnyc.vercel.app/movies')
+    fetch('https://mymoviz-backend-etnyc.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       const formatedMovies = data.movies.map((movie) => ({
